@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Ziheng (Jack) Chen</h1>
+            </div>
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Business" alt="Profile Picture" class="profile-pic">
+            <div class="content-container">
+                <div class="profile-card">
+                    <p class="summary">
+                        Ziheng (Jack) Chen is a highly skilled computer engineer with extensive experience in site reliability engineering, software development, and data engineering. He has a proven track record of improving system stability, optimizing workflows, and developing innovative solutions to complex problems. His technical expertise spans programming languages, cloud infrastructure, machine learning, and web development.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="mailto:zihengchen2000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2>Education</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Expected May 2025</div>
+                        <div class="timeline-content">
+                            <h3>Master of Science in Computer Engineering</h3>
+                            <p>University of Illinois Urbana-Champaign (UIUC)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2023</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Computer Engineering</h3>
+                            <p>University of Illinois Urbana-Champaign (UIUC)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2024 – Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3>Site Reliability Engineer Intern</h3>
+                            <span>Talos Trading<br></span>
+                            <p>Improved system stability using Python by provisioning upgraded hardware in GCP based on past usage metrics, boosting performance by 50% and reducing costs by 25%, saving $100K monthly. Designed an interactive TypeScript and Node.js webpage to visualize GCP infrastructure and market data connections. Integrated Datadog API with Flask, enhancing system visibility and reducing troubleshooting time by 2 hours daily. Optimized order reconciliation workflows by configuring Cloud Composer in GCP using Terraform and integrating BigQuery, centralizing proactive business alerts and uncovering a potential $1.5M annual cost increase. Automated market data failover and remote log retrieval with Bash scripts in Octopus Deploy, reducing downtime by 30%. Integrated validation checks into the release pipeline with Datadog alerts, reducing deployment time by 2 hours. Implemented YAML linting with GitHub Actions in submodules, reducing configuration errors by 30%. Traced logs across platform components in Linux using Postgres, conducting root cause analysis on cross-functional issues.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2023 – June 2023</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern (co-op)</h3>
+                            <span>StoneX Group<br></span>
+                            <p>Built a pipeline using Python and pandas to benchmark commodity futures indices with 200+ configurations. Identified the optimal configuration, surpassing 10-year return performance targets by 23.3%. Devised a system for version-controlling Databricks data processing tasks, reducing deployment errors by 25%. Developed a CI/CD pipeline in Azure DevOps to migrate Databricks notebooks and jobs to production using REST APIs, validated through edge-case testing of workload status, properties, and parameters.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2022 – Dec 2022</div>
+                        <div class="timeline-content">
+                            <h3>Data Engineer Intern (co-op)</h3>
+                            <span>StoneX Group<br></span>
+                            <p>Integrated Okta authentication into a Streamlit webpage via an Envoy Proxy microservice, using bearer tokens for user-specific access control, eliminating unauthorized access. Designed a Splunk dashboard to track real-time usage by user group, identifying popular content for prioritization. Streamlined the data curation ETL pipeline by migrating from Apache Airflow to a scheduled Databricks workflow, leveraging Azure Blob Storage for staging data and reducing load times from 150 seconds to 5 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2022 – July 2022</div>
+                        <div class="timeline-content">
+                            <h3>Data Engineer Intern</h3>
+                            <span>Ecolab<br></span>
+                            <p>Profiled Snowflake tables using JinjaSQL to identify key statistics, outliers, and trends, boosting data integrity. Processed 19,300 hours of dishwasher service logs from Snowflake using Azure Cognitive Services, identified six root causes, and guided improvements for future product revisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills</h2>
+            <div class="content-container grid-container">
+                <div class="grid-item">Python</div>
+                <div class="grid-item">C++</div>
+                <div class="grid-item">Bash</div>
+                <div class="grid-item">JavaScript</div>
+                <div class="grid-item">TypeScript</div>
+                <div class="grid-item">Go</div>
+                <div class="grid-item">SQL</div>
+                <div class="grid-item">CUDA</div>
+                <div class="grid-item">GCP</div>
+                <div class="grid-item">Azure DevOps</div>
+                <div class="grid-item">Octopus Deploy</div>
+                <div class="grid-item">Terraform</div>
+                <div class="grid-item">Kubernetes</div>
+                <div class="grid-item">Docker</div>
+                <div class="grid-item">Databricks</div>
+                <div class="grid-item">PyTorch</div>
+                <div class="grid-item">Langchain</div>
+                <div class="grid-item">pandas</div>
+                <div class="grid-item">Apache Airflow</div>
+                <div class="grid-item">BigQuery</div>
+                <div class="grid-item">Splunk</div>
+                <div class="grid-item">Datadog</div>
+                <div class="grid-item">CARLA</div>
+                <div class="grid-item">React.js</div>
+                <div class="grid-item">Node.js</div>
+                <div class="grid-item">Flask</div>
+                <div class="grid-item">Axios</div>
+                <div class="grid-item">Firebase</div>
+                <div class="grid-item">MySQL</div>
+                <div class="grid-item">PostgreSQL</div>
+                <div class="grid-item">MongoDB</div>
+                <div class="grid-item">GraphQL</div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+    </script>
+</body>
+</html>
